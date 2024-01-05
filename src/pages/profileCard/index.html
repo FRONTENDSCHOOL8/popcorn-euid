@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>euid profile</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/tailwind.css" />
+    <script type="module" src="/src/pages/profileCard/profileCard.js"></script>
+  </head>
+  <body class="bg-Contents-contentSecondary">
+    <h1 class="sr-only">이듬엔터 프로필수정</h1>
+    <div class="profileCard-edit profile-detail-inner bg-background">
+      <span>프로필 수정</span>
+      <button class="profileCard-button-close">
+        <img src="/public/images/close.svg" alt="닫힘버튼" />
+      </button>
+    </div>
+    <div class="profileCard-container px-3 pt-2 mb-10">
+      <h2 class="flex items-center gap-0.5">
+        프로필카드
+        <span>
+          <img src="/public/images/information.svg" alt="정보" />
+        </span>
+      </h2>
+      <div
+        class="profileCard-user flex justify-between items-center bg-background my-3 p-3 rounded-lg"
+      >
+        <div class="">
+          <p class="profileCard-user-name text-lg font-semibold">Hobby</p>
+          <p
+            class="text-sm text-secondary inline-block border border-secondary rounded-full px-1"
+          >
+            8기
+          </p>
+        </div>
+        <div
+          class="profileCard-user-profileImg w-[4.125rem] h-[4.125rem] rounded-full overflow-hidden"
+        >
+          <img
+            class="w-full h-full object-cover"
+            src="/src/assets/profileTest.jpg"
+            alt="프로필 사진"
+          />
+        </div>
+      </div>
+      <div class="profileCard-info bg-background rounded-t-lg pb-3">
+        <ul class="flex flex-col gap-4">
+          <li class="profileCard-form border-b p-3">
+            <span>기본정보</span>
+            <a class="text-base text-secondary pr-1" href="/">수정하기</a>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">이름(별명)</span>
+            <span>hobby</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">하는 일</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">프로필 키워드</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">성별</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">연령</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">회사</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">학교</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">자격</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+        </ul>
+      </div>
+      <div class="bg-background rounded-t-lg pb-3 mt-3">
+        <ul class="flex flex-col gap-4">
+          <li class="profileCard-form border-b p-3">
+            <span>추가 정보</span>
+            <a class="text-base text-secondary pr-1" href="/">수정하기</a>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">소개</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">연관 링크</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">활동 분야</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+          <li class="profileCard-form">
+            <span class="font-semibold">업체 정보</span>
+            <span class="text-base text-Contents-contentSecondary">미입력</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

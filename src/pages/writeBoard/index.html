@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/tailwind.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/pages/writeBoard/writeBoard.js"></script>
+    <title>writeBoard</title>
+  </head>
+  <body>
+    <body>
+      <header class="py-2 px-3">
+        <button class="writeBoard-back-button" type="button">
+          <img
+            class="inline-block"
+            src="/public/images/directionL.svg"
+            alt="뒤로가기"
+          />
+        </button>
+      </header>
+      <div class="px-[1.6875rem] py-3 text-lg]">
+        <h2 class="writeBoard-title sr-only">Euid 어떤 모임으로 할까요</h2>
+        <form action="#">
+          <label for="message" class="sr-only">제목</label>
+          <input
+            class="writeBoard-input w-full"
+            id="message"
+            type="text"
+            placeholder="이웃과 어떤 활동을 할까요"
+          />
+        </form>
+      </div>
+
+      <div class="px-3 py-4 text-sm">
+        <p><strong>남가과제2동 근처 인기활동</strong></p>
+
+        <div class="pt-3 flex flex-wrap space-y-2 gap-[0.375rem]">
+          <div class="rounded-md mt-2">
+            <button
+              type="button"
+              class="w-full px-3 py-[0.375rem] text-sm font-medium leading-5 bg-white border border-gray-300 rounded-full hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
+            >
+              💻 같이 프로젝트해요
+            </button>
+          </div>
+          <div class="rounded-md">
+            <button
+              type="button"
+              class="w-full px-3 py-[0.375rem] text-sm font-medium leading-5 bg-white border border-gray-300 rounded-full hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
+            >
+              📝 같이 스터디해요
+            </button>
+          </div>
+          <div class="rounded-md">
+            <button
+              type="button"
+              class="w-full px-3 py-[0.375rem] text-sm font-medium leading-5 bg-white border border-gray-300 rounded-full hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
+            >
+              🍙 같이 밥먹어요
+            </button>
+          </div>
+          <div class="rounded-md">
+            <button
+              type="button"
+              class="w-full px-3 py-[0.375rem] text-sm font-medium leading-5 bg-white border border-gray-300 rounded-full hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
+            >
+              ⌨ 같이 Lv2.알고리즘 풀어요
+            </button>
+          </div>
+          <div class="rounded-md">
+            <button
+              type="button"
+              class="w-full px-3 py-[0.375rem] text-sm font-medium leading-5 bg-white border border-gray-300 rounded-full hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150"
+            >
+              😜 오프라인으로 만나요
+            </button>
+          </div>
+          <div class="rounded-md"></div>
+        </div>
+      </div>
+
+      <div class="w-full px-3 absolute bottom-[2.125rem]">
+        <button
+          class="writeBoard-next-button max-w-[21.5625rem] mx-auto block text-center text-nowrap text-background rounded-3xl py-4 w-full border bg-primary"
+          aria-label="다음"
+        >
+          다음
+        </button>
+      </div>
+    </body>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>euid profile</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/styles/tailwind.css" />
+    <script
+      type="module"
+      src="/src/pages/profileDetails/profileDetails.js"
+    ></script>
+  </head>
+  <body class="bg-Contents-contentSecondary font-pretendard">
+    <h1 class="sr-only">이듬엔터 프로필상세</h1>
+    <div
+      class="profileDetails-basicInfo flex justify-between w-full p-4 border-b bg-background"
+    >
+      <h2>기본정보</h2>
+      <button class="profileDetails-button-close" type="button">
+        <img src="/public/images/close.svg" alt="닫힘버튼" />
+      </button>
+    </div>
+    <div
+      class="profileDetails-container bg-background flex flex-col gap-[1.875rem] py-2 px-3"
+    >
+      <div class="">
+        <p>하는 일</p>
+        <button
+          class="mt-2 flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 py-2.5 cursor-pointer"
+          type="button"
+        >
+          <img src="/public/images/plusProfile.svg" alt="" />
+          <span> 본인이 하는 일을 추가해보세요 </span>
+        </button>
+      </div>
+      <div class="">
+        <p>프로필 키워드</p>
+        <button
+          class="mt-2 flex w-full items-center justify-center gap-2 rounded-lg border border-gray-200 py-2.5 cursor-pointer"
+          type="button"
+        >
+          <img src="/public/images/plusProfile.svg" alt="" />
+          <span> 프로필 키워드를 추가해보세요 </span>
+        </button>
+      </div>
+      <div class="">
+        <p>성별</p>
+        <p class="text-sm text-Contents-contentSecondary">
+          정보 공개 시, 내 답변 프로필 카드에 정보가 노출됩니다.
+        </p>
+        <div
+          class="profileDetails-buttonWrap flex w-full rounded-lg bg-bluegray-300 mt-2 text-background"
+        >
+          <button
+            type="button"
+            class="profileDetails-button-valid w-[50%] flex justify-center items-center gap-1 py-1.5"
+          >
+            <img src="/public/images/passwordDetails.svg" alt="" />비공개
+          </button>
+          <button class="w-[50%] flex justify-center items-center gap-1 py-1.5">
+            <img src="/public/images/peoplePublic.svg" hidden alt="" />전체공개
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <p>연령</p>
+        <p class="text-sm text-Contents-contentSecondary">
+          정보 공개 시, 내 답변 프로필 카드에 정보가 노출됩니다.
+        </p>
+        <div
+          class="profileDetails-buttonWrap flex w-full rounded-lg bg-bluegray-300 mt-2 text-background"
+        >
+          <button
+            type="button"
+            class="profileDetails-button-valid w-[50%] flex justify-center items-center gap-1 py-1.5"
+          >
+            <img src="/public/images/passwordDetails.svg" alt="" />비공개
+          </button>
+          <button class="w-[50%] flex justify-center items-center gap-1 py-1.5">
+            <img src="/public/images/peoplePublic.svg" hidden alt="" />전체공개
+          </button>
+        </div>
+      </div>
+      <div class="">
+        <p>회사</p>
+
+        <div class="profileDetails-buttonWrap flex w-full mt-2 gap-1.5">
+          <button
+            type="button"
+            class="w-[50%] flex justify-center items-center gap-1 py-1.5 border border-gray-200 rounded-lg"
+          >
+            <img src="/public/images/search.svg" alt="" />검색하기
+          </button>
+          <label for="input-company"></label>
+          <input
+            type="text"
+            id="input-company"
+            class="w-[50%] flex justify-center text-center items-center gap-1 py-1.5 border border-gray-200 rounded-lg bg-pencil bg-no-repeat bg-[center_left_20%] placeholder:text-bluegray-900"
+            placeholder="직접 입력"
+          />
+        </div>
+      </div>
+      <div class="">
+        <p>자격</p>
+        <label for="profile-keyword"></label>
+        <input
+          type="text"
+          id="profile-keyword"
+          class="mt-2 flex w-full text-center items-center justify-center gap-2 rounded-lg border border-gray-200 py-2.5 cursor-pointer bg-pencil bg-no-repeat bg-[center_left_30%] placeholder:text-bluegray-900"
+          placeholder="직접 입력하기"
+        />
+      </div>
+      <div>
+        <p class="flex items-center gap-0.5">
+          취득자격
+          <a href="/">
+            <img src="/public/images/information.svg" alt="" />
+          </a>
+        </p>
+        <div class="mt-2 block">
+          <img
+            class="mx-auto"
+            src="/src/assets/enroll.jpg"
+            alt="국가 자격증 간편 등록 방법은 PC 프로필 설정 다음 취득 자격 관리에서 등록 가능합니다"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="profileDtails-agreement-container mt-3 bg-background pb-9">
+      <form action="/" method="get">
+        <div class="p-3 border-b flex justify-between items-center">
+          <div class="font-semibold relative pl-7">
+            <label for="agree-all" class=""> </label>
+            <input
+              class="absolute left-0 w-4 h-4 appearance-none bg-checkbox-uncheck top-0.5 checked:appearance-none checked:bg-checkbox"
+              type="checkbox"
+              id="agree-all"
+            />
+            아래 내용에 전체 동의합니다.
+          </div>
+          <span class="text-negative text-sm">필수동의</span>
+        </div>
+        <div class="p-3 justify-between items-center">
+          <div class="text-base font-semibold relative pl-7">
+            <label for="agree-personal" class=""> </label>
+            <input
+              class="absolute left-0 w-4 h-4 appearance-none bg-checkbox-uncheck top-0.5 checked:appearance-none checked:bg-checkbox"
+              type="checkbox"
+              id="agree-personal"
+            />
+            [ 필수 ] 개인 정보 수집 및 이용 동의
+          </div>
+          <p class="pl-6 text-Contents-contentSecondary text-sm">
+            입력한 별명, 프로필 사진, 하는 일, 프로필 키워드, 성별, 연령, 회 사,
+            학교, 자격은 엔터이듬 서비스 내 프로필 페이지, 답변자 정보 영역,
+            엔터이듬 홈 및 서비스 내 프로필 공개를 목적으로 합니다.
+            <span class="text-secondary"
+              >수집된 정보는 언제든지 직접 삭제할 수 있고, 탈퇴 시에는 바로
+              파기됩니다.
+            </span>
+          </p>
+        </div>
+        <div class="p-3 flex justify-between items-center">
+          <div class="text-base font-semibold relative pl-7">
+            <label for="aree-profile" class=""> </label>
+            <input
+              class="absolute left-0 w-4 h-4 appearance-none bg-checkbox-uncheck top-0.5 checked:appearance-none checked:bg-checkbox"
+              type="checkbox"
+              id="aree-profile"
+            />
+            [ 필수 ] 프로필 정보 노출 영역 확인
+          </div>
+          <button type="button" class="text-sm opacity-50">
+            자세히
+            <img
+              class="inline-block h-2.5"
+              src="/public/images/direction.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="p-3 flex justify-between items-center">
+          <div class="text-base font-semibold relative pl-7">
+            <label for="aree-profile" class=""> </label>
+            <input
+              class="absolute left-0 w-4 h-4 appearance-none bg-checkbox-uncheck top-0.5 checked:appearance-none checked:bg-checkbox"
+              type="checkbox"
+              id="aree-profile"
+            />
+            [ 필수 ] 사실과 다른 정보를 기재하여 발생한 문제에 대해서는 본인이
+            일체의 책임을 부담하겠습니다.
+          </div>
+        </div>
+        <div class="px-3 flex gap-2">
+          <button
+            type="button"
+            class="w-[50%] py-2 bg-gray-100 border-gray-200 border rounded-lg"
+          >
+            취소
+          </button>
+          <button
+            type="submit"
+            class="w-[50%] py-2 bg-bluegray-200 border-gray-200 border rounded-lg"
+          >
+            저장
+          </button>
+        </div>
+        <button
+          type="reset"
+          class="mt-4 mx-auto block text-sm text-Contents-contentSecondary"
+        >
+          정보 초기화 및 이용 동의 철회
+        </button>
+      </form>
+    </div>
+    <dialog class="p-5 b;text-center bg-background rounded-3xl">
+      <p class="">저장 완료!</p>
+      <p class="break-words py-5 text-sm text-Contents-contentSecondary">
+        내 질문&답변의 프로필 카드, 프로필 홈에서 변 경된 프로필 정보를 확인 할
+        수 있어요.
+      </p>
+      <button
+        type="button"
+        class="bg-primary rounded-lg w-full py-2 text-background"
+      >
+        확인
+      </button>
+    </dialog>
+  </body>
+</html>

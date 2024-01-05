@@ -5,6 +5,9 @@ export default {
     extend: {
       backgroundImage: {
         temperatureAngle: "url('/public/images/temperatureAngle.svg')",
+        pencil: "url('/public/images/pencil.svg')",
+        checkbox: "url('/public/images/checkBox.svg')",
+        'checkbox-uncheck': "url('/public/images/checkBox_uncheck.svg')",
       },
       fontFamily: {
         pretendard: ['Pretendard', 'sans-serif'],

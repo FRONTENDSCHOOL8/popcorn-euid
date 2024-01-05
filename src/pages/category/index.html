@@ -14,12 +14,13 @@
       class="category--container py-[1.125rem] px-[0.8125rem] h-screen max-w-[47.9375rem] mx-auto"
     >
       <div class="search flex flex-row justify-center items-center gap-2">
-        <a href="/src/pages/start/index.html"
-          ><img
+        <button>
+          <img
             src="/public/images/directionL.svg"
             alt="뒤로가기"
             class="w-[1.25rem] h-[1.25rem]"
-        /></a>
+          />
+        </button>
 
         <div
           class="flex flex-row justify-center items-center gap-[0.125rem] py-2 pr-[2.75rem] w-full border-b-[0.03125rem]"
@@ -31,7 +32,9 @@
               class="w-[1.25rem] h-[1.25rem]"
           /></a>
 
+          <label class="sr-only" for="search">검색하기</label>
           <input
+            id="search"
             type="search"
             placeholder="분야 (이름)로 검색 (ex.프론트)"
             class="search__input w-full h-[1.125rem] placeholder:text-base"
@@ -45,104 +48,104 @@
         관심분야를 선택해주세요!
       </p>
 
-      <div class="category--item-container grid grid-cols-2">
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">프로그래밍</p>
-            <p class="category--box__textTitle">프론트엔드</p>
+      <div class="category-container grid grid-cols-2">
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">프로그래밍</p>
+            <p class="category-item-textTitle">프론트엔드</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">프로그래밍</p>
-            <p class="category--box__textTitle">백엔드</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">프로그래밍</p>
+            <p class="category-item-textTitle">백엔드</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">프로그래밍</p>
-            <p class="category--box__textTitle">리액트</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">프로그래밍</p>
+            <p class="category-item-textTitle">리액트</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">프로그래밍</p>
-            <p class="category--box__textTitle">풀스택</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">프로그래밍</p>
+            <p class="category-item-textTitle">풀스택</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">프로그래밍</p>
-            <p class="category--box__textTitle">알고리즘</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">프로그래밍</p>
+            <p class="category-item-textTitle">알고리즘</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">프로그래밍</p>
-            <p class="category--box__textTitle">기초지식</p>
-          </div>
-          <img src="/public/images/plus.svg" alt="관심분야 추가" />
-        </div>
-
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">디자인</p>
-            <p class="category--box__textTitle">UI디자인</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">프로그래밍</p>
+            <p class="category-item-textTitle">기초지식</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">디자인</p>
-            <p class="category--box__textTitle">UX디자인</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">디자인</p>
+            <p class="category-item-textTitle">UI디자인</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">디자인</p>
-            <p class="category--box__textTitle">UI·UX</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">디자인</p>
+            <p class="category-item-textTitle">UX디자인</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">데이터</p>
-            <p class="category--box__textTitle">데이터분석</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">디자인</p>
+            <p class="category-item-textTitle">UI·UX</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">데이터</p>
-            <p class="category--box__textTitle">통계분석</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">데이터</p>
+            <p class="category-item-textTitle">데이터분석</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
 
-        <div class="category--box">
-          <div class="category--box__container">
-            <p class="category--box__textType">데이터</p>
-            <p class="category--box__textTitle">시각화</p>
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">데이터</p>
+            <p class="category-item-textTitle">통계분석</p>
+          </div>
+          <img src="/public/images/plus.svg" alt="관심분야 추가" />
+        </div>
+
+        <div class="category-item">
+          <div class="category-item-container">
+            <p class="category-item-textType">데이터</p>
+            <p class="category-item-textTitle">시각화</p>
           </div>
           <img src="/public/images/plus.svg" alt="관심분야 추가" />
         </div>
       </div>
       <a
-        class="category--button block text-center w-full mt-[0.625rem] py-[0.5rem] bg-primary rounded-2xl border-primary text-background text-base font-bold leading-5"
+        class="category-button-save block text-center w-full mt-[0.625rem] py-[0.5rem] bg-primary rounded-2xl border-primary text-background text-base font-bold leading-5"
         href="/"
         aria-label="저장하기"
         >이대로 저장할래요</a

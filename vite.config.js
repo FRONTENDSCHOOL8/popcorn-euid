@@ -12,9 +12,15 @@ export default defineConfig({
         exchangeBoard: resolve(__dirname, 'src/pages/exchangeBoard/index.html'),
         exchange: resolve(__dirname, 'src/pages/exchange/index.html'),
         start: resolve(__dirname, 'src/pages/start/index.html'),
+        category: resolve(__dirname, 'src/pages/category/index.html'),
         signUP: resolve(__dirname, 'src/pages/signUp/index.html'),
         login: resolve(__dirname, 'src/pages/login/index.html'),
         profile: resolve(__dirname, 'src/pages/profile/index.html'),
+        profileCard: resolve(__dirname, 'src/pages/profileCard/index.html'),
+        profileDetails: resolve(
+          __dirname,
+          'src/pages/profileDetails/index.html'
+        ),
         board: resolve(__dirname, 'src/pages/board/index.html'),
         writeBoardSecond: resolve(
           __dirname,
@@ -26,6 +32,7 @@ export default defineConfig({
         ),
         boardContet: resolve(__dirname, 'src/pages/boardContent/index.html'),
         chatScreen: resolve(__dirname, 'src/pages/chatScreen/index.html'),
+        writeBoard: resolve(__dirname, 'src/pages/writeBoard/index.html'),
       },
     },
   },
