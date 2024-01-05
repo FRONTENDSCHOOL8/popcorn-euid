@@ -13,6 +13,7 @@ export default defineConfig({
         exchange: resolve(__dirname, 'src/pages/exchange/index.html'),
         start: resolve(__dirname, 'src/pages/start/index.html'),
         signUP: resolve(__dirname, 'src/pages/signUp/index.html'),
+        login: resolve(__dirname, 'src/pages/login/index.html'),
         profile: resolve(__dirname, 'src/pages/profile/index.html'),
         board: resolve(__dirname, 'src/pages/board/index.html'),
         writeBoardSecond: resolve(

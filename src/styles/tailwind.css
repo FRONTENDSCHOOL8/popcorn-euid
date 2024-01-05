@@ -59,11 +59,11 @@
     @apply rounded-r-lg rounded-bl-lg bg-tertiary p-2;
   }
 
-  .signUp-verify-valid {
+  .signUp-verify-valid .login-verify-valid {
     @apply bg-gray-500 text-background font-bold
   }
 
-  .signUp-agree-valid{
+  .signUp-agree-valid .login-verify-valid {
     @apply bg-tertiary
   }
 }
