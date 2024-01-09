@@ -1,9 +1,11 @@
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
+import image from '@rollup/plugin-image';
 
 export default defineConfig({
+  plugins: [image()],
   build: {
-    outDir: '',
+    outDir: 'docs',
     target: 'esnext', //browsers can handle the latest ES features
     base: '/popcorn-euid/',
     rollupOptions: {

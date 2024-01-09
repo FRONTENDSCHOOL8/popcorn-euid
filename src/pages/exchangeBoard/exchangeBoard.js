@@ -1,4 +1,6 @@
 import { getNode } from '/src/lib';
+import heartSvg from '/public/images/heart.svg';
+import fullHeartSvg from '/public/images/fullheart.svg';
 
 /* -------------------------------------------------------------------------- */
 /*                                history back                                */
@@ -18,8 +20,8 @@ function handleHeart(e) {
   const heartImage = e.target;
 
   const currentSrc = heartImage.src;
-  const originSrc = '/public/images/heart.svg';
-  const fullHeartSrc = '/public/images/fullheart.svg';
+  const originSrc = heartSvg;
+  const fullHeartSrc = fullHeartSvg;
 
   if (currentSrc.includes(originSrc)) {
     gsap.from(heartImage, {

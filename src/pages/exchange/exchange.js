@@ -1,4 +1,6 @@
 import { getNode, insertFirst } from '/src/lib/';
+import plusTapActiveSvg from '/public/images/plusTapActive.svg';
+import plusTapSvg from '/public/images/plusTap.svg';
 import { gsap } from 'gsap';
 
 /* -------------------------------------------------------------------------- */
@@ -47,7 +49,7 @@ function handleButton() {
 
 function addList() {
   const img = /* html */ `
-  <img src="/public/images/plusTapActive.svg" alt="" />
+  <img src="${plusTapActiveSvg}" alt="" />
   `;
 
   const ul = /* html */ `
@@ -92,7 +94,7 @@ function addList() {
 function removeList() {
   const list = document.querySelector('.exchange-button-ul');
 
-  plusButton.innerHTML = '<img src="/public/images/plusTap.svg" alt="" />';
+  plusButton.innerHTML = `<img src="${plusTapSvg}" alt="" />`;
   list.innerHTML = '';
 }
 
