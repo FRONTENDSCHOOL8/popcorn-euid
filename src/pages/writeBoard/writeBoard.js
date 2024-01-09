@@ -23,6 +23,9 @@ function handleNext(event) {
       //   gsap.to('.w-screen', { x: -screenWidth, ease: 'power2.inOut' });
     }
 
+    if (currentIndex === 1) {
+      nextButton.textContent = '일정 만들기';
+    }
     if (currentIndex === 2) {
       moveChatPage();
       nextButton.textContent = '채팅방으로 이동';
