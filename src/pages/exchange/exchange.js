@@ -1,4 +1,5 @@
-import { getNode, getNodes, insertFirst } from '/src/lib/';
+import { getNode, insertFirst } from '/src/lib/';
+import { gsap } from 'gsap';
 
 /* -------------------------------------------------------------------------- */
 /*                             toggle plus button                             */

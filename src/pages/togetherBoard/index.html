@@ -169,9 +169,7 @@
     </section>
 
     <button
-
       class="hidden togetherBoard-write-on fixed bottom-28 right-5 p-3 bg-background rounded-full shadow-Contents-contentPrimary shadow-md"
-
       type="button"
     >
       <img class="" src="/public/images/plusTapActive.svg" alt="" />
@@ -228,25 +226,40 @@
       class="fixed h-[3.75rem] border-t-Contents-contentSecondary bottom-0 w-full px-3 pt-2 pb-2 bg-background"
     >
       <div class="flex justify-around text-sm font-normal">
-        <div class="movePageHome flex-col text-center">
-          <img src="/public/images/home.svg" class="mx-auto mb-1" alt="" />
-          <span class>홈</span>
+        <div class="flex-col text-center">
+          <a href="/src/pages/story/index.html">
+            <img src="/public/images/home.svg" class="mx-auto mb-1" alt="" />
+            <span class>홈</span>
+          </a>
         </div>
-        <div class="movePageBoard flex-col items-center justify-center">
-          <img src="/public/images/fullFile.svg" class="mx-auto mb-1" alt="" />
-          <span>게시판</span>
+        <div class="flex-col items-center justify-center">
+          <a href="#">
+            <img
+              src="/public/images/fullFile.svg"
+              class="mx-auto mb-1"
+              alt=""
+            />
+            <span>게시판</span>
+          </a>
         </div>
-        <div class="movePageLocation flex-col items-center justify-center">
-          <img src="/public/images/map.svg" class="mx-auto mb-1" alt="" />
-          <span>내 근처</span>
+        <div class="flex-col items-center justify-center">
+          <a href="#">
+            <img src="/public/images/map.svg" class="mx-auto mb-1" alt="" />
+            <span>내 근처</span>
+          </a>
         </div>
-        <div class="movePageChat flex-col items-center justify-center">
-          <img src="/public/images/chat.svg" class="mx-auto mb-1" alt="" />
-          <span>채팅</span>
+        <div class="flex-col items-center justify-center">
+          <a href="#">
+            <img src="/public/images/chat.svg" class="mx-auto mb-1" alt="" />
+            <span>채팅</span>
+          </a>
         </div>
-        <div class="movePageProfile flex-col items-center justify-center">
-          <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
-          <span>나의 이듬</span>
+
+        <div class="flex-col items-center justify-center">
+          <a href="/src/pages/profile/index.html">
+            <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
+            <span>나의 이듬</span>
+          </a>
         </div>
       </div>
     </nav>

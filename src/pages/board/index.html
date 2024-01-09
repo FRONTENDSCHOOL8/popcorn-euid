@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/pages/board/board.js"></script>
   </head>
-  <body class="relative">
+  <body>
     <h1 class="sr-only">이듬 게시판</h1>
-    <div class="mb-[71.75px]">
+    <div class="mb-[60px]">
       <header class="region-nav sticky top-0 bg-background">
         <div class="region-nav__wrapper flex justify-between w-full px-5 py-2">
           <div class="flex flex-shrink-0 select-wrapper">
@@ -420,7 +420,7 @@
       </section>
     </div>
     <section
-      class="bg-primary text-background text-base w-full rounded-t-2xl fixed bottom-[71.75px]"
+      class="bg-primary text-background text-base w-full rounded-t-2xl fixed bottom-[60px]"
     >
       <div class="p-3 pt-4 flex justify-between">
         <div>
@@ -441,36 +441,52 @@
           <strong class="board-subject-name">전체</strong>
         </div>
         <div
-          class="board-participating px-2 py-1 text-secondary rounded-2xl px-5 border bg-bluegray-100"
+          class="board-participating py-1 text-secondary rounded-2xl px-5 border bg-bluegray-100"
         >
           참여중
         </div>
       </div>
     </section>
-    <nav class="w-full px-3 pt-2 pb-6 bg-background bottom-0 fixed">
+    <nav
+      class="fixed h-[3.75rem] border-t-Contents-contentSecondary bottom-0 w-full px-3 pt-2 pb-2 bg-background"
+    >
       <div class="flex justify-around text-sm font-normal">
         <div class="flex-col text-center">
-          <img src="/public/images/fullHome.svg" class="mx-auto mb-1" alt="" />
-          <span class>홈</span>
+          <a href="/src/pages/story/index.html">
+            <img src="/public/images/home.svg" class="mx-auto mb-1" alt="" />
+            <span class>홈</span>
+          </a>
         </div>
         <div class="flex-col items-center justify-center">
-          <img src="/public/images/life.svg" class="mx-auto mb-1" alt="" />
-          <span>게시판</span>
+          <a href="#">
+            <img
+              src="/public/images/fullFile.svg"
+              class="mx-auto mb-1"
+              alt=""
+            />
+            <span>게시판</span>
+          </a>
         </div>
         <div class="flex-col items-center justify-center">
-          <img src="/public/images/map.svg" class="mx-auto mb-1" alt="" />
-          <span>내 근처</span>
+          <a href="#">
+            <img src="/public/images/map.svg" class="mx-auto mb-1" alt="" />
+            <span>내 근처</span>
+          </a>
         </div>
         <div class="flex-col items-center justify-center">
-          <img src="/public/images/chat.svg" class="mx-auto mb-1" alt="" />
-          <span>채팅</span>
+          <a href="#">
+            <img src="/public/images/chat.svg" class="mx-auto mb-1" alt="" />
+            <span>채팅</span>
+          </a>
         </div>
+
         <div class="flex-col items-center justify-center">
-          <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
-          <span>나의 이듬</span>
+          <a href="/src/pages/profile/index.html">
+            <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
+            <span>나의 이듬</span>
+          </a>
         </div>
       </div>
     </nav>
   </body>
 </html>
-message.txt 21KB

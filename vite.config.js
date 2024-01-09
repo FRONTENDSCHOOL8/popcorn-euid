@@ -2,8 +2,13 @@ import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  esbuild: {
+    supported: {
+      'top-level-await': true, //browsers can handle top-level-await features
+    },
+  },
   build: {
-    outDir: 'docs',
+    outDir: '',
     target: 'esnext', //browsers can handle the latest ES features
     base: '/popcorn-euid/',
     rollupOptions: {
@@ -26,10 +31,6 @@ export default defineConfig({
           'src/pages/profileDetails/index.html'
         ),
         board: resolve(__dirname, 'src/pages/board/index.html'),
-        writeBoardSecond: resolve(
-          __dirname,
-          'src/pages/writeBoardSecond/index.html'
-        ),
         boardContet: resolve(__dirname, 'src/pages/boardContent/index.html'),
         chatScreen: resolve(__dirname, 'src/pages/chatScreen/index.html'),
         writeBoard: resolve(__dirname, 'src/pages/writeBoard/index.html'),

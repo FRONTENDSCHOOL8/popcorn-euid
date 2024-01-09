@@ -6,7 +6,6 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="/src/styles/tailwind.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script type="module" src="/src/pages/exchange/exchange.js"></script>
   </head>
   <body>
@@ -28,7 +27,7 @@
             />
           </div>
 
-          <div class="flex items-center gap-2">
+          <div class="flex items-center gap-4">
             <a href="/src/pages/search/" class="flex-shrink-0">
               <img
                 src="/public/images/search.svg"
@@ -423,8 +422,10 @@
           <span>채팅</span>
         </div>
         <div class="flex-col items-center justify-center">
-          <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
-          <span>나의 이듬</span>
+          <a href="/src/pages/profile/">
+            <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
+            <span>나의 이듬</span>
+          </a>
         </div>
       </div>
     </nav>
