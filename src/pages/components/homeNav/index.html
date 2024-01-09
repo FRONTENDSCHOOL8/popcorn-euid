@@ -16,27 +16,36 @@
       class="fixed h-[3.75rem] border-t border-t-Contents-contentSecondary bottom-0 w-full px-3 pt-2 pb-2 bg-background"
     >
       <div class="flex justify-around text-sm font-normal">
-
-        <div class="movePageHome flex-col text-center">
-          <img src="/public/images/fullHome.svg" class="mx-auto mb-1" alt="" />
-          <span class>홈</span>
-        </div>
-        <div class="movePageBoard flex-col items-center justify-center">
-          <img src="/public/images/life.svg" class="mx-auto mb-1" alt="" />
-          <span>게시판</span>
-        </div>
-        <div class="movePageLocation flex-col items-center justify-center">
-          <img src="/public/images/map.svg" class="mx-auto mb-1" alt="" />
-          <span>내 근처</span>
+        <div class="flex-col text-center">
+          <a href="/src/pages/story/">
+            <img src="/public/images/home.svg" class="mx-auto mb-1" alt="" />
+            <span class>홈</span>
+          </a>
 
         </div>
-        <div class="movePageChat flex-col items-center justify-center">
+        <div class="flex-col items-center justify-center">
+          <a href="/src/pages/board/">
+            <img src="/public/images/life.svg" class="mx-auto mb-1" alt="" />
+            <span>게시판</span>
+          </a>
+        </div>
+
+        <div class="flex-col items-center justify-center">
+          <a href="/src/pages/exchange/">
+            <img src="/public/images/fullMap.svg" class="mx-auto mb-1" alt="" />
+            <span>내 근처</span>
+          </a>
+        </div>
+        <div class="flex-col items-center justify-center">
           <img src="/public/images/chat.svg" class="mx-auto mb-1" alt="" />
           <span>채팅</span>
         </div>
-        <div class="movePageProfile flex-col items-center justify-center">
-          <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
-          <span>나의 이듬</span>
+        <div class="flex-col items-center justify-center">
+
+          <a href="/src/pages/profile/">
+            <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
+            <span>나의 이듬</span>
+          </a>
         </div>
       </div>
     </nav>

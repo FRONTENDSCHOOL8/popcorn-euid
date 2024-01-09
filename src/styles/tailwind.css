@@ -83,7 +83,13 @@
   .profileDetails-button-valid{
     @apply border border-secondary rounded-lg bg-background text-secondary
       }
-
+  .profileDetails-buttonAgree-invalid{
+    @apply  bg-bluegray-200 border-gray-200  border
+      }
+  .profileDetails-buttonAgree-valid{
+    @apply  bg-secondary border border-secondary text-background
+      }
+      
   .signUp-verify-valid {
     @apply bg-gray-500 text-background font-bold;
   }
