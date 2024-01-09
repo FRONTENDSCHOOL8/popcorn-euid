@@ -1,1 +1,0 @@
-import"./tailwind-md187qH2-sjl9nnAU.js";import{o}from"./delay-JyFhHnao-rzhtmnxh.js";const t=o(".profileDetails-button-close");o(".profileDetails-buttonWrap");function i(){history.back()}t.addEventListener("click",i);
