@@ -102,6 +102,25 @@
         </div>
       </div>
       <div class="">
+        <p>학교</p>
+
+        <div class="profileDetails-buttonWrap flex w-full mt-2 gap-1.5">
+          <button
+            type="button"
+            class="w-[50%] flex justify-center items-center gap-1 py-1.5 border border-gray-200 rounded-lg"
+          >
+            <img src="/public/images/search.svg" alt="" />검색하기
+          </button>
+          <label for="input-company"></label>
+          <input
+            type="text"
+            id="input-company"
+            class="w-[50%] flex justify-center text-center items-center gap-1 py-1.5 border border-gray-200 rounded-lg bg-pencil bg-no-repeat bg-[center_left_20%] placeholder:text-bluegray-900"
+            placeholder="직접 입력"
+          />
+        </div>
+      </div>
+      <div class="">
         <p>자격</p>
         <label for="profile-keyword"></label>
         <input
@@ -201,7 +220,7 @@
           </button>
           <button
             type="submit"
-            class="w-[50%] py-2 bg-bluegray-200 border-gray-200 border rounded-lg"
+            class="profileDetails-buttonAgree-invalid w-[50%] py-2 rounded-lg"
           >
             저장
           </button>
@@ -227,5 +246,39 @@
         확인
       </button>
     </dialog>
+    <nav
+      class="fixed h-[3.75rem] border-t-Contents-contentSecondary bottom-0 w-full px-3 pt-2 pb-2 bg-background"
+    >
+      <div class="flex justify-around text-sm font-normal">
+        <div class="flex-col text-center">
+          <a href="/src/pages/story/">
+            <img src="/public/images/home.svg" class="mx-auto mb-1" alt="" />
+            <span class>홈</span>
+          </a>
+        </div>
+        <div class="flex-col items-center justify-center">
+          <a href="/src/pages/board/">
+            <img src="/public/images/life.svg" class="mx-auto mb-1" alt="" />
+            <span>게시판</span>
+          </a>
+        </div>
+        <div class="flex-col items-center justify-center">
+          <a href="/src/pages/exchange/">
+            <img src="/public/images/Map.svg" class="mx-auto mb-1" alt="" />
+            <span>내 근처</span>
+          </a>
+        </div>
+        <div class="flex-col items-center justify-center">
+          <img src="/public/images/chat.svg" class="mx-auto mb-1" alt="" />
+          <span>채팅</span>
+        </div>
+        <div class="flex-col items-center justify-center">
+          <a href="/src/pages/profile/">
+            <img src="/public/images/fullMy.svg" class="mx-auto mb-1" alt="" />
+            <span>나의 이듬</span>
+          </a>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
