@@ -25,6 +25,7 @@ function handleNext(event) {
 
     if (currentIndex === 2) {
       moveChatPage();
+      nextButton.textContent = '채팅방으로 이동';
     }
   }
 }
