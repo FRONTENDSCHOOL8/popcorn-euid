@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@rollup/plugin-image": "^3.0.3",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "pocketbase": "^0.20.1",
