@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <title>회원가입</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" crossorigin src="/assets/signUP-3OCI-EOa.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/tailwind-6aAOAmML.js">
+    <link rel="modulepreload" crossorigin href="/assets/delay-JyFhHnao.js">
+    <link rel="stylesheet" crossorigin href="/assets/tailwind-M3vJzl0s.css">
+  </head>
+  <body>
+    <h1 class="sr-only">이듬 회원가입</h1>
+    <div class="signup-display w-screen h-screen overflow-hidden relative">
+      <!-- 콘테이너 클래스를 js로 transform(-x)로 왼쪽으로 옮기면 됨 -->
+      <div
+        class="signUp-container flex whitespace-nowrap absolute top-0 left-0"
+      >
+        <!-- 인증번호 받기 전 -->
+        <section class="py-[0.5rem] px-[0.75rem] w-screen">
+          <h2 class="sr-only">인증번호 받기</h2>
+          <button>
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='21'%20viewBox='0%200%2020%2021'%20fill='none'%3e%3cpath%20d='M12.9422%2016.3078C13.0003%2016.3659%2013.0463%2016.4348%2013.0777%2016.5107C13.1092%2016.5865%2013.1254%2016.6679%2013.1254%2016.75C13.1254%2016.8321%2013.1092%2016.9134%2013.0777%2016.9893C13.0463%2017.0652%2013.0003%2017.1341%2012.9422%2017.1922C12.8841%2017.2502%2012.8152%2017.2963%2012.7393%2017.3277C12.6634%2017.3592%2012.5821%2017.3753%2012.5%2017.3753C12.4179%2017.3753%2012.3366%2017.3592%2012.2607%2017.3277C12.1848%2017.2963%2012.1159%2017.2502%2012.0578%2017.1922L5.80782%2010.9422C5.74971%2010.8841%205.70361%2010.8152%205.67215%2010.7393C5.6407%2010.6634%205.62451%2010.5821%205.62451%2010.5C5.62451%2010.4178%205.6407%2010.3365%205.67215%2010.2606C5.70361%2010.1848%205.74971%2010.1158%205.80782%2010.0578L12.0578%203.80779C12.1751%203.69052%2012.3342%203.62463%2012.5%203.62463C12.6659%203.62463%2012.8249%203.69052%2012.9422%203.80779C13.0595%203.92507%2013.1254%204.08413%2013.1254%204.24998C13.1254%204.41583%2013.0595%204.57489%2012.9422%204.69217L7.1336%2010.5L12.9422%2016.3078Z'%20fill='black'/%3e%3c/svg%3e"
+              alt="뒤로가기"
+              class="button-goback w-[1.25rem] h-[1.25rem]"
+            />
+          </button>
+          <div class="signUp-text py-[0.75rem]">
+            <p class="text-lg font-semibold">안녕하세요!</p>
+            <p class="text-lg font-semibold">휴대폰 번호로 가입해주세요</p>
+            <p class="text-xs">
+              휴대폰 번호는 안전하게 보관되며 서로에게 공개되지 않아요.
+            </p>
+          </div>
+          <form
+            class="signUp-form-before flex flex-col justify-center items-center gap-3 mb-[0.75rem]"
+          >
+            <input
+              class="signUp-input-phoneNumber border-solid border-[0.5px] border-gray-900 rounded-sm w-full h-[2.375rem] py-[0.5rem] px-[0.75rem] placeholder:text-base font-normal"
+              type="tel"
+              id="PhoneNumber"
+              name="phoneNumber"
+              placeholder="휴대폰 번호(-없이 숫자만 입력)"
+              pattern="[0-9]{11}"
+              maxlength="11"
+              required
+            />
+            <!-- valid 된 경우 : signUp-verify-valid 클래스 추가해주기 -->
+            <button
+              class="signUp-button-verify border-solid border-[0.5px] rounded-sm w-full h-[2.375rem] py-[0.5rem] text-base font-normal text-gray-500"
+              id="verify"
+              type="submit"
+              aria-label="인증문자 받기"
+            >
+              인증문자 받기
+            </button>
+          </form>
+          <div class="flex flex-row justify-center items-center gap-2">
+            <p class="text-sm text-gray-500">휴대폰 번호가 변경되었나요?</p>
+            <a href="/" class="text-sm underline underline-offset-2"
+              >이메일로 계정찾기</a
+            >
+          </div>
+        </section>
+        <!-- 인증번호 받은 후 -->
+        <section class="py-[0.5rem] px-[0.75rem] w-screen">
+          <h2 class="sr-only">인증번호 인증</h2>
+          <button>
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='20'%20height='21'%20viewBox='0%200%2020%2021'%20fill='none'%3e%3cpath%20d='M12.9422%2016.3078C13.0003%2016.3659%2013.0463%2016.4348%2013.0777%2016.5107C13.1092%2016.5865%2013.1254%2016.6679%2013.1254%2016.75C13.1254%2016.8321%2013.1092%2016.9134%2013.0777%2016.9893C13.0463%2017.0652%2013.0003%2017.1341%2012.9422%2017.1922C12.8841%2017.2502%2012.8152%2017.2963%2012.7393%2017.3277C12.6634%2017.3592%2012.5821%2017.3753%2012.5%2017.3753C12.4179%2017.3753%2012.3366%2017.3592%2012.2607%2017.3277C12.1848%2017.2963%2012.1159%2017.2502%2012.0578%2017.1922L5.80782%2010.9422C5.74971%2010.8841%205.70361%2010.8152%205.67215%2010.7393C5.6407%2010.6634%205.62451%2010.5821%205.62451%2010.5C5.62451%2010.4178%205.6407%2010.3365%205.67215%2010.2606C5.70361%2010.1848%205.74971%2010.1158%205.80782%2010.0578L12.0578%203.80779C12.1751%203.69052%2012.3342%203.62463%2012.5%203.62463C12.6659%203.62463%2012.8249%203.69052%2012.9422%203.80779C13.0595%203.92507%2013.1254%204.08413%2013.1254%204.24998C13.1254%204.41583%2013.0595%204.57489%2012.9422%204.69217L7.1336%2010.5L12.9422%2016.3078Z'%20fill='black'/%3e%3c/svg%3e"
+              alt="뒤로가기"
+              class="button-goback w-[1.25rem] h-[1.25rem]"
+            />
+          </button>
+          <div
+            class="signUp-input-after border-solid border-[0.5px] border-gray-900 rounded-sm w-full h-[2.375rem] py-[0.5rem] px-[0.75rem] placeholder:text-base text-gray-500 text-base mt-2"
+          >
+            입력한 핸드폰 번호
+          </div>
+          <form
+            class="signUp-form-after flex flex-col justify-center items-center gap-3 mt-[0.75rem]"
+          >
+            <!-- valid 된 경우 : signUp-verify-valid 클래스 추가해주기 -->
+            <button
+              class="signUp-button-verify border-solid border-[0.5px] rounded-sm w-full h-[2.375rem] py-[0.5rem] text-base font-semibold leading-5"
+              id="verifyAgain"
+              type="submit"
+              aria-label="인증문자 다시 받기"
+            >
+              인증문자 다시 받기 (04분 57초)
+              <!-- 카운트다운 js로 구현하기 -->
+            </button>
+            <input
+              class="signUp-input-verifyNumber border-solid border-[0.5px] border-gray-900 rounded-sm w-full h-[2.375rem] py-[0.5rem] px-[0.75rem] placeholder:text-base font-normal placeholder:text-gray-500"
+              type="text"
+              id="verifyNumber"
+              name="PinNumber"
+              placeholder="인증번호 입력"
+              pattern="[0-9]{6}"
+              maxlength="6"
+              required
+            />
+          </form>
+          <p class="text-sm font-normal text-gray-500 mt-2">
+            어떤 경우에도 타인에게 공유하지마세요!
+          </p>
+          <button
+            class="signUp-button-agree signUp-agree-valid border-solid border-[0.5px] border-gray-500 rounded-2xl w-full py-[0.75rem] bg-gray-500 text-background text-base font-bold my-[0.75rem]"
+            id="Agree"
+            type="submit"
+            name="agree"
+            value="true"
+            aria-label="동의하고 시작하기"
+          >
+            동의하고 시작하기
+          </button>
+          <a
+            href="/"
+            class="block text-sm font-normal text-gray-500 text-center underline underline-offset-2"
+            >인증번호가 오지 않아요?</a
+          >
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

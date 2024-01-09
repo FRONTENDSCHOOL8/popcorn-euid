@@ -1,0 +1,19 @@
+<svg width="16" height="17" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+ <g>
+  <title>Layer 1</title>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="301" x2="721" y1="301" x1="721" opacity="NaN" stroke="red" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="282" x2="718" y1="282" x1="718" opacity="NaN" stroke="red" fill="none"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="466" x2="926" y1="466" x1="926" opacity="NaN" stroke="red" fill="none"/>
+  <rect id="svg_35" height="0.84699" width="10.98361" y="4.6694" x="2.56284" stroke="red" fill="none"/>
+  <rect id="svg_36" height="0.95628" width="10.79235" y="6.11749" x="2.64481" stroke="red" fill="none"/>
+  <rect id="svg_37" height="0.87432" width="9.23497" y="7.64754" x="3.2459" stroke="red" fill="none"/>
+  <rect id="svg_38" height="0.71038" width="7.65027" y="9.06831" x="4.14754" stroke="red" fill="none"/>
+  <rect id="svg_39" height="0.38251" width="4.94536" y="10.24317" x="5.51366" stroke="red" fill="none"/>
+  <rect id="svg_40" height="0.30055" width="3.06011" y="11.14481" x="6.33333" stroke="red" fill="none"/>
+  <rect id="svg_41" height="0.32787" width="1.42077" y="12.01913" x="7.15301" stroke="red" fill="none"/>
+  <rect id="svg_42" height="0.4918" width="2.97814" y="3.98634" x="3.38251" stroke="red" fill="none"/>
+  <rect id="svg_43" height="0.60109" width="2.97814" y="4.06831" x="9.50273" stroke="red" fill="none"/>
+  <path id="svg_1" fill="black" d="m8.06659,12.6296l-0.06667,0.0667l-0.07333,-0.0667c-3.16667,-2.87333 -5.26,-4.77333 -5.26,-6.69999c0,-1.33334 1,-2.33334 2.33333,-2.33334c1.02666,0 2.02666,0.66667 2.38,1.57334l1.24,0c0.35333,-0.90667 1.35333,-1.57334 2.37998,-1.57334c1.3334,0 2.3334,1 2.3334,2.33334c0,1.92666 -2.0934,3.82666 -5.26671,6.69999zm2.93331,-10.36666c-1.15998,0 -2.27332,0.54 -2.99998,1.38667c-0.72667,-0.84667 -1.84,-1.38667 -3,-1.38667c-2.05333,0 -3.66667,1.60667 -3.66667,3.66667c0,2.51333 2.26667,4.57329 5.7,7.68669l0.96667,0.88l0.96666,-0.88c3.43332,-3.1134 5.70002,-5.17336 5.70002,-7.68669c0,-2.06 -1.6133,-3.66667 -3.6667,-3.66667z"/>
+ </g>
+</svg>
