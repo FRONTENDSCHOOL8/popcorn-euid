@@ -8,7 +8,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '',
+    outDir: 'docs',
     target: 'esnext', //browsers can handle the latest ES features
     base: '/popcorn-euid/',
     rollupOptions: {
