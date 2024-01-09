@@ -16,22 +16,38 @@
     <h1 class="sr-only">이듬 거래글</h1>
 
     <nav
-      class="exchangeBoard-nav sticky flex gap-48 justify-around px-[1.125rem] py-2 top-0 bg-background z-10"
+      class="exchangeBoard-nav sticky flex gap-40 justify-around px-[1.125rem] py-2 top-0 bg-background z-10"
     >
-      <div class="flex gap-3">
+      <div class="flex items-center gap-4">
         <button type="button" class="exchangeBoard-back">
-          <img src="/public/images/directionL.svg" alt="뒤로가기 버튼" />
+          <img
+            src="/public/images/directionL.svg"
+            class="h-6 w-6"
+            alt="뒤로가기 버튼"
+          />
         </button>
         <a href="/src/pages/story/">
-          <img src="/public/images/home.svg" alt="홈으로 가기 버튼" />
+          <img
+            src="/public/images/home.svg"
+            class="h-6 w-6"
+            alt="홈으로 가기 버튼"
+          />
         </a>
       </div>
-      <div class="flex gap-3">
+      <div class="flex gap-4">
         <button type="button" class="exchangeBoard-share" aria-label="공유하기">
-          <img src="/public/images/share.svg" alt="공유하기 아이콘" />
+          <img
+            src="/public/images/share.svg"
+            class="h-6 w-6"
+            alt="공유하기 아이콘"
+          />
         </button>
         <button type="button" class="exchangeBoard-more" aria-label="더보기">
-          <img src="/public/images/fullmore.svg" alt="더보기 아이콘" />
+          <img
+            src="/public/images/fullmore.svg"
+            class="h-6 w-6"
+            alt="더보기 아이콘"
+          />
         </button>
       </div>
     </nav>
@@ -243,8 +259,10 @@
           <span>채팅</span>
         </div>
         <div class="flex-col items-center justify-center">
-          <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
-          <span>나의 이듬</span>
+          <a href="/src/pages/profile/">
+            <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
+            <span>나의 이듬</span>
+          </a>
         </div>
       </div>
     </nav>

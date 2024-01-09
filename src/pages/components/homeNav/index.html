@@ -16,7 +16,6 @@
       class="fixed h-[3.75rem] border-t border-t-Contents-contentSecondary bottom-0 w-full px-3 pt-2 pb-2 bg-background"
     >
       <div class="flex justify-around text-sm font-normal">
-
         <div class="movePageHome flex-col text-center">
           <img src="/public/images/fullHome.svg" class="mx-auto mb-1" alt="" />
           <span class>홈</span>
@@ -28,15 +27,16 @@
         <div class="movePageLocation flex-col items-center justify-center">
           <img src="/public/images/map.svg" class="mx-auto mb-1" alt="" />
           <span>내 근처</span>
-
         </div>
         <div class="movePageChat flex-col items-center justify-center">
           <img src="/public/images/chat.svg" class="mx-auto mb-1" alt="" />
           <span>채팅</span>
         </div>
         <div class="movePageProfile flex-col items-center justify-center">
-          <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
-          <span>나의 이듬</span>
+          <a href="/src/pages/profile/">
+            <img src="/public/images/my.svg" class="mx-auto mb-1" alt="" />
+            <span>나의 이듬</span>
+          </a>
         </div>
       </div>
     </nav>
