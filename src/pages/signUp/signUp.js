@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { addClass, removeClass } from '../../lib/dom/css';
 import {
   getNode,
@@ -6,6 +7,11 @@ import {
   getNodes,
   getStorage,
 } from '/src/lib/';
+=======
+import { removeClass } from '../../lib/dom/css';
+import { getNode, toggleClass } from '/src/lib/';
+import PocketBase from 'pocketbase';
+>>>>>>> Stashed changes
 import pb from '/src/api/pocketbase';
 
 /* -------------------------------------------------------------------------- */
@@ -120,7 +126,60 @@ async function validPhoneNumber() {
 verifyButton.addEventListener('click', validPhoneNumber);
 
 /* -------------------------------------------------------------------------- */
+<<<<<<< Updated upstream
 /*                             인증번호 유효성 검사                                */
+=======
+/*                             입력번호 유효성 검사                                */
+/* -------------------------------------------------------------------------- */
+
+const verifyNumberInput = getNode('.signUp-input-verifyNumber');
+
+function ValidVerifyNumber(e) {
+  const verifyNumber = e.target.value;
+  console.log(verifyNumber);
+
+  if (getVerifyNumber === verifyNumber) {
+    console.log('성공!');
+    removeClass(agreeButton, 'bg-gray-500');
+    toggleClass(agreeButton, 'signUp-agree-valid');
+  } else {
+    console.log('실패!');
+    removeClass(agreeButton, 'signUp-agree-valid');
+    addClass(agreeButton, 'bg-gray-500');
+  }
+}
+
+verifyNumberInput.addEventListener('input', ValidVerifyNumber);
+
+/* -------------------------------------------------------------------------- */
+/*                            유효성 검사 끝나고 이동                               */
+/* -------------------------------------------------------------------------- */
+function allValidCheck() {
+  const agreeButtonValid = Array.from(agreeButton.classList).includes(
+    'signUp-agree-valid'
+  );
+
+  if (agreeButtonValid) {
+    const userName = Math.floor(Math.random() * 1000) + 1000;
+    const phoneNumber = localStorage.getItem('phoneNumber');
+
+    const data = {
+      username: userName,
+      phoneNumber: phoneNumber,
+    };
+
+    pb.collection('users').create(data);
+    window.location.href = '/src/pages/story/';
+  } else {
+    alert('인증번호가 잘못되었습니다.');
+  }
+}
+
+agreeButton.addEventListener('click', allValidCheck);
+
+/* -------------------------------------------------------------------------- */
+/*                              pb로 데이터 전송                                 */
+>>>>>>> Stashed changes
 /* -------------------------------------------------------------------------- */
 
 const verifyNumberInput = getNode('.signUp-input-verifyNumber');
