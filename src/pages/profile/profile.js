@@ -307,5 +307,5 @@ getNode('.profile-button-cancel').addEventListener('click', () => {
 getNode('.profile-button-userDelete').addEventListener('click', async () => {
   await pb.collection('users').delete(userNow.id);
   deleteStorage();
-  window.location.href = '/src/pages/start/';
+  window.location.href = '/';
 });
